@@ -1,0 +1,45 @@
+h1{
+    color: red;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rosybrown;
+    font-family: 'Squada One', cursive;
+}
+
+.logo{
+    colour:white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.navLinks li{
+    list-style: none;
+}
+
+.navLinks a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
