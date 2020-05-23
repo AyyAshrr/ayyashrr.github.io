@@ -1,4 +1,4 @@
-var wordToDisplay = "Ashleigh";
+/*var wordToDisplay = "Ashleigh";
 
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
@@ -11,10 +11,16 @@ drawName(wordToDisplay, letterColors);
 
 bubbleShape = 'circle';
 
-bounceBubbles();
+bounceBubbles();*/
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
 
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
 }
+
+navSlide();
