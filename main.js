@@ -1,26 +1,42 @@
-/*var wordToDisplay = "Ashleigh";
+//Select element function
 
-var red = [0, 100, 63];
-var orange = [40, 100, 60];
-var green = [75, 100, 40];
-var blue = [196, 77, 55];
-var purple = [280, 50, 60];
-var letterColors = [red, orange, green, blue, purple];
-
-drawName(wordToDisplay, letterColors);
-
-bubbleShape = 'circle';
-
-bounceBubbles();*/
-
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-    });
-}
-
-navSlide();
+const selectElement = function(element) {
+    return document.querySelector(element);
+  };
+  const menuToggler = selectElement(".menu-toggle");
+  const navItemToggler = selectElement(".item-toggle");
+  const body = selectElement("body");
+  menuToggler.addEventListener("click", function() {
+    body.classList.toggle("open");
+  });
+  navItemToggler.addEventListener("click", function() {
+    body.classList.toggle("open");
+  });
+  
+  /*scroll reveal*/
+  window.sr = ScrollReveal();
+  sr.reveal(".animate-left", {
+    origin: "left",
+    duration: 1000,
+    distance: "25rem",
+    delay: 300
+  });
+  
+  sr.reveal(".animate-right", {
+    origin: "right",
+    duration: 1000,
+    distance: "25rem",
+    delay: 600
+  });
+  sr.reveal(".animate-top", {
+    origin: "top",
+    duration: 1000,
+    distance: "25rem",
+    delay: 600
+  });
+  sr.reveal(".animate-bottom", {
+    origin: "bottom",
+    duration: 1000,
+    distance: "25rem",
+    delay: 600
+  });
